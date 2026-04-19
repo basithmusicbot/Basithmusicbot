@@ -37,7 +37,7 @@ class Config:
             url for url in getenv("COOKIES_URL", "").split(" ")
             if url and "batbin.me" in url
         ]
-        self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://files.catbox.moe/hokzdj.jpg")
+        self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra .ph/file/3e40a408286d4eda24191.jpg")
         self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/hokzdj.jpg")
         self.START_VDO = getenv("START_VDO", "https://files.catbox.moe/idxn51.mp4")
 
