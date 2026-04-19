@@ -14,7 +14,7 @@ class Config:
         self.LOGGER_ID = int(getenv("LOGGER_ID", 0))
         self.OWNER_ID = int(getenv("OWNER_ID", 0))
 
-        self.DURATION_LIMIT = int(getenv("DURATION_LIMIT", 120)) * 120
+        self.DURATION_LIMIT = int(getenv("DURATION_LIMIT", 180)) * 180
         self.QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", 20))
         self.PLAYLIST_LIMIT = int(getenv("PLAYLIST_LIMIT", 20))
 
@@ -38,7 +38,7 @@ class Config:
             if url and "batbin.me" in url
         ]
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/cad7038fe82e47f79c609.jpg")
-        self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/ytct0i.JPG")
+        self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/ps0flt.jpg")
         self.START_VDO = getenv("START_VDO", "https://files.catbox.moe/idxn51.mp4")
 
     def check(self):
